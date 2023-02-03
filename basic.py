@@ -1,7 +1,7 @@
 import os
 import re
 from tkinter import Tk     # from tkinter import Tk for Python 3.x
-from tkinter.filedialog import askopenfile
+from tkinter.filedialog import askopenfilename
 import json
 
 songs = {}
@@ -22,7 +22,7 @@ def main():
     # for f in files:
     #     calculateFile(f)
 
-    file = askopenfile
+    file = askopenfilename()
 
     calculateFile(file)
 
